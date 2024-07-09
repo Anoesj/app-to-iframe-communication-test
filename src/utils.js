@@ -4,3 +4,7 @@ export function getTimestamp () {
 
   return `${pad(d.getFullYear(),4)}-${pad(d.getMonth()+1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
 }
+
+export function getMessageEventMarkup (message) {
+  return `<div class="message-event"><span class="timestamp">${getTimestamp()}</span><span class="message">${message}<span><div>`;
+}
