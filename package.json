@@ -1,0 +1,12 @@
+{
+  "name": "app-with-iframe",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite -c vite-host.config.js & vite -c vite-iframe.config.js"
+  },
+  "devDependencies": {
+    "vite": "^5.3.1"
+  }
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" class="host">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+
+  <body>
+    <section>
+      <strong>Host</strong>
+
+      <div id="output"></div>
+
+      <form>
+        <input type="text" id="input" placeholder="Type message to send to iframe"/>
+        <button id="send" type="submit">Send</button>
+      </form>
+    </section>
+
+    <iframe src="http://localhost:5174"></iframe>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
