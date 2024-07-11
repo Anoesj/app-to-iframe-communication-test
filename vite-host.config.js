@@ -11,6 +11,7 @@ export default defineConfig(({ mode }) => {
     },
     plugins: [
       createHtmlPlugin({
+        minify: false,
         inject: {
           data: {
             iframeSrc: env.VITE_IFRAME_SRC || 'http://localhost:5174',
