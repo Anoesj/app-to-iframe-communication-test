@@ -4,9 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite -c vite-host.config.js & vite -c vite-iframe.config.js"
+    "dev": "vite -c vite-host.config.js & vite -c vite-iframe.config.js",
+    "build:host": "vite build -c vite-host.config.js",
+    "build:iframe": "vite build -c vite-iframe.config.js",
+    "preview:host": "pnpm serve -s host/dist -p 5173",
+    "preview:iframe": "pnpm serve -s iframe/dist -p 5174"
   },
   "devDependencies": {
+    "serve": "^14.2.3",
     "vite": "^5.3.1"
   }
 }
